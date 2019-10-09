@@ -1,0 +1,125 @@
+[TOC]
+# Git 学习笔记
+
+### git的基础使用指令
+	git init
+	将我们手动创建号好的文件夹变成一个Git仓库
+	git add 文件名  
+	将文件添加到Git仓库  注:文件一定要在Git仓库的子目录下,否则Git搜索不到
+	
+	git commit -m "wrote a 文件名不带后缀 file"  
+	将文件提交到Git仓库,-m 后输入的是本次提交的说明,可以输入任意内容,最好见名知意
+	
+	git config --list
+	可以检车配置信息,会显示账号密码和关联的远程库的信息
+
+#### git add 和Git commit 的区别
+	git add
+	可以多次提交不同的文件
+	例: git add demo1.txt
+	       git  add demo2.txt
+	       
+	git commit 
+	一次可以提交多个文件
+	例:git commit -m "我这次提交了三个文件"
+	
+	注: 先使用add 将文件添加至仓库再使用commit才可以进行提交修改,并且文档中不能提交空的文件
+	
+		在修改后也要先使用add提交一次再使用commit提交否则会提交失败
+
+#### 查看修改的文档记录
+	git log 
+	可以查看最近到最远的提交日志git rm --cached <file>
+	直接删除暂存区的文件,工作区不做改变
+	git log --pretty=oneline  
+	可以减少查看时输入的信息,更加方便阅览
+	
+	注:在信息最前面的一大排十六机制的数字是我们修改的commit id(版本号),是为了方便以后多人共享一个版本库的时候产生id冲突
+
+#### 版本 回退上一个版本或多个版本
+		git reset --hard HEAD^  
+		使用此指令即可回退上一个版本.最后的HEAD,即HEAD^^就是回退之前的两个版本
+
+
+	若回退版本数量过多可以使用HEAD~数字,数字填写想要会退的版本数量即可.
+	
+	git reset --hard 十六进制的id的前八位
+	可以直接回到指定版本id的版本
+
+#### 时光穿梭机
+	git reflog
+	可以使用此指令查看你的每一次操作,用于与 git reset --hard 十六进制的id的前八位 配合使用回到指定版本
+
+#### 工作区(Working Directory)和暂存区
+	工作区概念: 我们在电脑里创建的learngit文件夹就是一个工作区
+	
+	版本库(Repositoty)
+	工作区里的隐藏目录.get,这个不算是工作区,而是Git的版本库
+	
+	Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的TOC一个指针叫HEAD。
+	
+	我们把文件往Git版本库里添加的时候，是分两步执行的
+	
+	第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区
+	
+	第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+	
+	因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改
+	
+	git status 
+	用来查看目前暂存区的状态  注:每次commit提交之前都要先查看缓存区状态,以免造成未知的损失和错误
+	
+	git diff HEAD -- 文件名
+	用来查看工作区里的版本和版本库里的最新版本之间的区别
+
+#### 撤销修改
+	git checkout -- 文件名
+	用于在工作区的修改撤销,在暂存区使用,只能将在进入 暂存区以后修改的内容撤销
+	
+	git reset HEAD 文件名 
+	用于在暂存区撤销暂存的作用,将内容重新存放到工作区
+
+#### 删除文件
+	git rm 文件名 
+	用于删除版本库中的文件,在使用过后 使用 Git commit 提交
+	
+	git rm --cached <file>
+	直接删除暂存区的文件,工作区不做改变
+	
+	git checkout -- 文件名 
+	也可以用于将版本库里的版本替换工作区的版本 无论工作区是修改还是删除,都可以恢复
+	
+	git checkout HEAD 文件名 
+	替换暂存区和工作区的文件
+	注:从来没有被添加到版本库就被删除的文件，是无法恢复的！
+
+#### GitHub的使用
+##### 生成ssh秘钥
+		1.ssh-keygen -t rsa -C "邮箱地址"
+	
+		2.以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
+		
+		3.登录GitHub,进入Add SHH key 将id_rsa.pub内的秘钥复制进去
+
+##### 将本地仓库推送到GitHub上的步骤:
+
+		1.git remote add 远程仓库名 git@github.com:michaelliao/仓库名.git
+		一般情况下 远程仓库名默认origin
+		2.	git push -u 远程库名称 分支名称
+		例:git push -u origin master
+		在仓库本地下执行,可以将本地仓库推送到GitHbu仓库
+		git push命令,实际上就是把当前分支masetr推送到远程
+		
+		注:由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Ggit的基础使用指令
+	it不但git的git的基础使用指令
+	基础使用指令
+	会把本地的master分支内容推送给远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+		
+		3.git push origin master
+		第二次推送时则无需加-u参数,即可推送
+
+##### 从远程库克隆至本地步骤
+		1.登录GitHub,创建一个新的仓库,如仓库名为gits,勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。
+	
+		2.终端进入想要克隆到的位置 使用git clone Git库地址
+
