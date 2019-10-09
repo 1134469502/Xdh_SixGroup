@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'node', '@latest' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/abcd/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData node
+9 silly fetchPackageMetaData @latest
+10 silly fetchNamedPackageData node
+11 silly mapToRegistry name node
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/node
+15 silly fetchOtherPackageData @latest
+16 silly cache add args [ '@latest', null ]
+17 verbose cache add spec @latest
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: '@latest',
+18 silly cache add   scope: null,
+18 silly cache add   name: null,
+18 silly cache add   rawSpec: '@latest',
+18 silly cache add   spec: '/home/abcd/php/ajaxDown/test2/@latest',
+18 silly cache add   type: 'local' }
+19 error addLocal Could not install /home/abcd/php/ajaxDown/test2/@latest
+20 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/abcd/php/ajaxDown/test2/@latest'
+20 silly fetchPackageMetaData  error for @latest { Error: ENOENT: no such file or directory, open '/home/abcd/php/ajaxDown/test2/@latest'
+20 silly fetchPackageMetaData   errno: -2,
+20 silly fetchPackageMetaData   code: 'ENOENT',
+20 silly fetchPackageMetaData   syscall: 'open',
+20 silly fetchPackageMetaData   path: '/home/abcd/php/ajaxDown/test2/@latest' }
+21 verbose request uri https://registry.npmjs.org/node
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 下午11:51:27
+24 verbose request id b874421067495b2a
+25 verbose etag W/"65d38e9ddb09a26ae36bf109fdda5acf"
+26 verbose lastModified Wed, 07 Aug 2019 03:13:50 GMT
+27 http request GET https://registry.npmjs.org/node
+28 http 304 https://registry.npmjs.org/node
+29 verbose headers { date: 'Sun, 11 Aug 2019 15:51:28 GMT',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'set-cookie':
+29 verbose headers    [ '__cfduid=d1c6738ae6748884b52503d8b7259d9951565538688; expires=Mon, 10-Aug-20 15:51:28 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'cache-control': 'max-age=300',
+29 verbose headers   'cf-ray': '504b5f0228d67910-LAX',
+29 verbose headers   age: '173',
+29 verbose headers   etag: '"65d38e9ddb09a26ae36bf109fdda5acf"',
+29 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 verbose headers   'last-modified': 'Wed, 07 Aug 2019 03:13:50 GMT',
+29 verbose headers   vary: 'accept-encoding, accept',
+29 verbose headers   'x-amz-meta-rev': '487-372568c0bd5c8aca64b4ce2e3fe206a3',
+29 verbose headers   server: 'cloudflare' }
+30 silly get cb [ 304,
+30 silly get   { date: 'Sun, 11 Aug 2019 15:51:28 GMT',
+30 silly get     connection: 'keep-alive',
+30 silly get     'set-cookie':
+30 silly get      [ '__cfduid=d1c6738ae6748884b52503d8b7259d9951565538688; expires=Mon, 10-Aug-20 15:51:28 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'cache-control': 'max-age=300',
+30 silly get     'cf-ray': '504b5f0228d67910-LAX',
+30 silly get     age: '173',
+30 silly get     etag: '"65d38e9ddb09a26ae36bf109fdda5acf"',
+30 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+30 silly get     'last-modified': 'Wed, 07 Aug 2019 03:13:50 GMT',
+30 silly get     vary: 'accept-encoding, accept',
+30 silly get     'x-amz-meta-rev': '487-372568c0bd5c8aca64b4ce2e3fe206a3',
+30 silly get     server: 'cloudflare' } ]
+31 verbose etag https://registry.npmjs.org/node from cache
+32 verbose get saving node to /home/abcd/.npm/registry.npmjs.org/node/.cache.json
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Starting
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: ENOENT: no such file or directory, open '/home/abcd/php/ajaxDown/test2/@latest'
+39 verbose cwd /home/abcd/php/ajaxDown/test2
+40 error Linux 5.0.0-23-generic
+41 error argv "/usr/bin/node" "/usr/bin/npm" "i" "node" "@latest"
+42 error node v8.10.0
+43 error npm  v3.5.2
+44 error path /home/abcd/php/ajaxDown/test2/@latest
+45 error code ENOENT
+46 error errno -2
+47 error syscall open
+48 error enoent ENOENT: no such file or directory, open '/home/abcd/php/ajaxDown/test2/@latest'
+49 error enoent ENOENT: no such file or directory, open '/home/abcd/php/ajaxDown/test2/@latest'
+49 error enoent This is most likely not a problem with npm itself
+49 error enoent and is related to npm not being able to find a file.
+50 verbose exit [ -2, true ]

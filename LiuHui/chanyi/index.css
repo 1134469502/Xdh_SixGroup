@@ -1,0 +1,215 @@
+*{
+    font-family: Arial;
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-indent: 2em;
+    font-weight: 700;
+}
+#css-zen-garden{
+    width: 1800px;
+    height: 2000px;
+      background: url("./img/timg.gif")  no-repeat fixed;   
+
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.89);
+}
+#css-zen-garden h1{
+    margin-left: 200px;
+}
+#css-zen-garden h2{
+    margin-left: 70px;
+}
+#zen-preamble h3{
+    margin-left: 70px;
+}
+#css-zen-garden p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+}
+#zen-intro {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin:0 auto;
+}
+#zen-intro header h1{
+
+    font-size: 50px;
+}  
+.explanation{
+    border-top: 5px solid rgb(255,244,5,0.8);
+    width: 1850px;
+    height: 300px;
+    background-color:rgba(255, 255, 255, 0.7)
+}
+.explanation p {
+    float: left;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.explanation  h3{
+    float: left;
+    margin-left: 760px;
+    margin-right: 0px;
+} 
+.participation{
+    border-top: 5px solid #cce4fb;
+    width:1850px;
+    height: 260px;
+    background-color:rgba(255, 255, 255, 0.7)
+}
+.participation p{
+    float: left;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.participation h3{
+    float: left;
+    margin-left: 800px;
+    margin-right: 0px;
+}
+
+.benefits{
+    border-top:  5px solid rgba(255, 255, 255, 0.3);
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 600px;
+    width: 400px;
+    background-color:rgba(246,247,146,0.7);
+    float: right;
+}
+.benefits h3{
+    margin-left: 120px;
+}
+.requirements{
+    border-top:  5px solid rgba(255, 255, 255, 0.3);
+    float: left;
+    height: 600px;
+    width:1400px;
+    /* background: url("./img/pikachu1.gif") ; */
+    background-color: rgba(5, 244, 204, 0.2);
+}
+.requirements p{
+    float: left;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.requirements h3{
+    margin-left: 600px;
+}
+/* .sidebar{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(255,244,5,0.8);
+    float: left;
+} */
+.wrapper{
+    width: 100%;
+    height: 1000px;
+    background: rgb(204, 228, 251,0.7);
+}
+
+ /* .zen-submit {
+    background: plum;
+    width: 300px;
+    height: 280px;
+} */
+/* .zen-translations{
+    background-color: rgb(238, 232, 170,0.7);
+    float: left;
+    width: 300px;
+    height: 280px;
+} */
+footer {
+    float: right;
+    margin-right: 800px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    clear: both;
+}
+footer a{
+    color: black;
+    font-size: 25px;
+    background: rgb(204, 228, 251,0.7);
+    border-radius: 40%;
+    padding: 8px;
+    clear: both;
+
+}
+
+#design-selection {
+    margin-top: 50px;
+    margin-left:150px;
+    float: left;
+    width: 400px;
+    height: 300px;
+    background-color:rgb(175, 238, 238,0.9);
+    border-radius: 20%;
+    -webkit-box-shadow: 0 0 5px 3px #ccc; /*谷歌浏览器*/
+	-moz-box-shadow: 0 0 5px 3px #ccc; 
+}
+#design-selection h3{
+    margin-left: 70px;
+}
+#design-selection li{
+    line-height: 20px;
+    list-style:none;
+    font-size: 15px;
+}
+
+#design-selection a{
+    line-height: 20px;
+    list-style:none;
+    font-size: 15px;
+}
+ #zen-resources{
+     margin-top: 66px;
+     margin-right: 250px;
+    float: right;
+    width: 300px;
+    height: 200px;
+    background-color:rgb(237, 240, 56,0.9);
+    border-radius: 20%;
+    -webkit-box-shadow: 0 0 5px 3px #ccc; /*谷歌浏览器*/
+	-moz-box-shadow: 0 0 5px 3px #ccc; 
+} 
+#zen-resources h3{
+    margin-left: 60px;
+}
+#zen-resources  li{
+    list-style:none;
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+#design-archives{
+    margin-top: 60px;
+    margin-left: 150px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color:rgb(240, 230, 140,0.9);
+    border-radius: 20%;
+    -webkit-box-shadow: 0 0 5px 3px #ccc; /*谷歌浏览器*/
+	-moz-box-shadow: 0 0 5px 3px #ccc; 
+}
+#design-archives ul{
+    position: absolute;
+    right: 900px;
+}
+#design-archives h3{
+    margin-left: 35px;
+}
+#design-archives  li{
+    list-style:none;
+}
+

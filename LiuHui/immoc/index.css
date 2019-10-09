@@ -1,0 +1,2084 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: auto;
+  font-size: 1.6em;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+  /* color: #333; */
+  min-width: 1300px; }
+
+.purple_new, .orange_new {
+  position: absolute;
+  top: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+  left: -8px;
+  z-index: 4;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 20px;
+  padding: 0 8px;
+  background-color: #9447EB;
+  background-image: linear-gradient(90deg, #bd89f8 6%, #9447eb 93%); }
+
+.orange_new {
+  background-color: #FFAA00;
+  background-image: linear-gradient(90deg, #ffaa00 17%, #f76b1c 100%); }
+
+.span_box, .combat .content .types_title .span_l, .combat .content .types_title .span_r, .course .span_l_2, .course .span_r_2, .Beginner .span_l_3, .Beginner .span_r_3, .Skill_improvement .span_l_4, .Skill_improvement .span_r_4 {
+  background: url("./img/long.png") no-repeat;
+  background-size: 100%;
+  width: 56px;
+  height: 36px;
+  display: inline-block;
+  background-size: 100%;
+  vertical-align: bottom; }
+
+.combats, .course, .Beginner, .Skill_improvement, .advanced_technology, .notes, .teacher, .celebrity {
+  z-index: 888;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  position: relative;
+  box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+  background: #fff; }
+  .combats .content, .course .content, .Beginner .content, .Skill_improvement .content, .advanced_technology .content, .notes .content, .teacher .content, .celebrity .content {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    padding: 0px 0 48px 0;
+    margin-right: auto;
+    margin-left: auto; }
+    .combats .content .types_title, .course .content .types_title, .Beginner .content .types_title, .Skill_improvement .content .types_title, .advanced_technology .content .types_title, .notes .content .types_title, .teacher .content .types_title, .celebrity .content .types_title {
+      text-align: center;
+      line-height: 36px;
+      color: #93999F;
+      margin-top: -2px;
+      margin-bottom: 5px;
+      letter-spacing: -2px; }
+      .combats .content .types_title em, .course .content .types_title em, .Beginner .content .types_title em, .Skill_improvement .content .types_title em, .advanced_technology .content .types_title em, .notes .content .types_title em, .teacher .content .types_title em, .celebrity .content .types_title em {
+        margin: 0px  3px 0px 0px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        color: #4D555D; }
+    .combats .content .content_under, .course .content .content_under, .Beginner .content .content_under, .Skill_improvement .content .content_under, .advanced_technology .content .content_under, .notes .content .content_under, .teacher .content .content_under, .celebrity .content .content_under {
+      display: block; }
+      .combats .content .content_under .under_a, .course .content .content_under .under_a, .Beginner .content .content_under .under_a, .Skill_improvement .content .content_under .under_a, .advanced_technology .content .content_under .under_a, .notes .content .content_under .under_a, .teacher .content .content_under .under_a, .celebrity .content .content_under .under_a {
+        display: block;
+        transform: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        width: 216px;
+        float: left;
+        height: 256px;
+        margin-top: 10px;
+        margin-right: 2px;
+        margin-left: 16px; }
+        .combats .content .content_under .under_a img, .course .content .content_under .under_a img, .Beginner .content .content_under .under_a img, .Skill_improvement .content .content_under .under_a img, .advanced_technology .content .content_under .under_a img, .notes .content .content_under .under_a img, .teacher .content .content_under .under_a img, .celebrity .content .content_under .under_a img {
+          width: 99%;
+          height: 120px;
+          border-radius: 8px; }
+        .combats .content .content_under .under_a .p_bold, .course .content .content_under .under_a .p_bold, .Beginner .content .content_under .under_a .p_bold, .Skill_improvement .content .content_under .under_a .p_bold, .advanced_technology .content .content_under .under_a .p_bold, .notes .content .content_under .under_a .p_bold, .teacher .content .content_under .under_a .p_bold, .celebrity .content .content_under .under_a .p_bold {
+          white-space: pre-wrap;
+          height: 45px;
+          width: 200px;
+          color: #1c1f21;
+          font-size: 16px;
+          font-weight: bold;
+          margin: 8px 8px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          transition: all 0.3s; }
+        .combats .content .content_under .under_a .content_md, .course .content .content_under .under_a .content_md, .Beginner .content .content_under .under_a .content_md, .Skill_improvement .content .content_under .under_a .content_md, .advanced_technology .content .content_under .under_a .content_md, .notes .content .content_under .under_a .content_md, .teacher .content .content_under .under_a .content_md, .celebrity .content .content_under .under_a .content_md {
+          position: relative;
+          margin-top: -4px;
+          text-align: center;
+          overflow: hidden; }
+          .combats .content .content_under .under_a .content_md div, .course .content .content_under .under_a .content_md div, .Beginner .content .content_under .under_a .content_md div, .Skill_improvement .content .content_under .under_a .content_md div, .advanced_technology .content .content_under .under_a .content_md div, .notes .content .content_under .under_a .content_md div, .teacher .content .content_under .under_a .content_md div, .celebrity .content .content_under .under_a .content_md div {
+            float: left;
+            margin: 2px 5px 1px 7px;
+            font-size: 12px;
+            color: #93999F; }
+          .combats .content .content_under .under_a .content_md .set_sns i, .course .content .content_under .under_a .content_md .set_sns i, .Beginner .content .content_under .under_a .content_md .set_sns i, .Skill_improvement .content .content_under .under_a .content_md .set_sns i, .advanced_technology .content .content_under .under_a .content_md .set_sns i, .notes .content .content_under .under_a .content_md .set_sns i, .teacher .content .content_under .under_a .content_md .set_sns i, .celebrity .content .content_under .under_a .content_md .set_sns i {
+            content: url(./img/用户.png); }
+          .combats .content .content_under .under_a .content_md .star, .course .content .content_under .under_a .content_md .star, .Beginner .content .content_under .under_a .content_md .star, .Skill_improvement .content .content_under .under_a .content_md .star, .advanced_technology .content .content_under .under_a .content_md .star, .notes .content .content_under .under_a .content_md .star, .teacher .content .content_under .under_a .content_md .star, .celebrity .content .content_under .under_a .content_md .star {
+            margin-left: 12px; }
+            .combats .content .content_under .under_a .content_md .star i, .course .content .content_under .under_a .content_md .star i, .Beginner .content .content_under .under_a .content_md .star i, .Skill_improvement .content .content_under .under_a .content_md .star i, .advanced_technology .content .content_under .under_a .content_md .star i, .notes .content .content_under .under_a .content_md .star i, .teacher .content .content_under .under_a .content_md .star i, .celebrity .content .content_under .under_a .content_md .star i {
+              content: url("./img/评价星星.png"); }
+        .combats .content .content_under .under_a .content_last .course_card_price, .course .content .content_under .under_a .content_last .course_card_price, .Beginner .content .content_under .under_a .content_last .course_card_price, .Skill_improvement .content .content_under .under_a .content_last .course_card_price, .advanced_technology .content .content_under .under_a .content_last .course_card_price, .notes .content .content_under .under_a .content_last .course_card_price, .teacher .content .content_under .under_a .content_last .course_card_price, .celebrity .content .content_under .under_a .content_last .course_card_price {
+          float: left;
+          font-weight: bold;
+          font-size: 12px;
+          color: #4D555D;
+          line-height: 1px;
+          margin-left: 6px;
+          margin-top: 12px; }
+          .combats .content .content_under .under_a .content_last .course_card_price_no, .course .content .content_under .under_a .content_last .course_card_price_no, .Beginner .content .content_under .under_a .content_last .course_card_price_no, .Skill_improvement .content .content_under .under_a .content_last .course_card_price_no, .advanced_technology .content .content_under .under_a .content_last .course_card_price_no, .notes .content .content_under .under_a .content_last .course_card_price_no, .teacher .content .content_under .under_a .content_last .course_card_price_no, .celebrity .content .content_under .under_a .content_last .course_card_price_no {
+            float: left;
+            font-weight: bold;
+            font-size: 12px;
+            color: #4D555D;
+            line-height: 1px;
+            margin-left: 6px;
+            margin-top: 12px;
+            text-decoration: line-through; }
+        .combats .content .content_under .under_a .content_last .limited_time_offer, .course .content .content_under .under_a .content_last .limited_time_offer, .Beginner .content .content_under .under_a .content_last .limited_time_offer, .Skill_improvement .content .content_under .under_a .content_last .limited_time_offer, .advanced_technology .content .content_under .under_a .content_last .limited_time_offer, .notes .content .content_under .under_a .content_last .limited_time_offer, .teacher .content .content_under .under_a .content_last .limited_time_offer, .celebrity .content .content_under .under_a .content_last .limited_time_offer {
+          text-align: center;
+          font-size: 13px;
+          color: white;
+          width: 62px;
+          float: left;
+          margin-left: 5px;
+          margin-top: 3px;
+          background: rgba(242, 13, 13, 0.6);
+          padding: 0 4px;
+          border-radius: 3px;
+          font-weight: 600;
+          display: inline-block; }
+        .combats .content .content_under .under_a .course_label, .course .content .content_under .under_a .course_label, .Beginner .content .content_under .under_a .course_label, .Skill_improvement .content .content_under .under_a .course_label, .advanced_technology .content .content_under .under_a .course_label, .notes .content .content_under .under_a .course_label, .teacher .content .content_under .under_a .course_label, .celebrity .content .content_under .under_a .course_label {
+          height: 26px;
+          position: absolute;
+          top: 85px;
+          left: 10px; }
+          .combats .content .content_under .under_a .course_label label, .course .content .content_under .under_a .course_label label, .Beginner .content .content_under .under_a .course_label label, .Skill_improvement .content .content_under .under_a .course_label label, .advanced_technology .content .content_under .under_a .course_label label, .notes .content .content_under .under_a .course_label label, .teacher .content .content_under .under_a .course_label label, .celebrity .content .content_under .under_a .course_label label {
+            font-size: 12px;
+            padding: 4px 8px;
+            color: #FFFFFF;
+            background: rgba(28, 31, 33, 0.6);
+            font-weight: 200;
+            border-radius: 4px; }
+
+/*----------------------------------------------------------媒体查询部分------------------------------------------------------*/
+@media screen and (max-width: 1298px) {
+  .search_a a {
+    display: none; } }
+.header {
+  z-index: 888;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+  width: auto;
+  height: 72px;
+  white-space: nowrap;
+  position: relative; }
+
+.page-container {
+  width: auto;
+  padding-left: 0.3rem;
+  position: relative; }
+
+/*  导航栏中的ul*/
+.page-container ul {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .page-container ul li {
+    float: left;
+    margin-top: 1.51em;
+    list-style: none;
+    margin-right: 2.095%; }
+    .page-container ul li #new_png {
+      background: url("./img/new.png") no-repeat;
+      position: absolute;
+      display: inline-block;
+      top: 14px;
+      width: 16px;
+      height: 16px; }
+    .page-container ul li a {
+      text-decoration: none;
+      color: #4D555D; }
+      .page-container ul li a:hover {
+        color: black; }
+  .page-container ul #hand {
+    margin-right: 1%; }
+
+/*慕课网图片*/
+.header img {
+  position: relative;
+  float: left;
+  width: 210px;
+  height: 72px;
+  margin-right: -0.8%;
+  margin-left: 0.1%; }
+
+/*搜索框
+父元素设置为相对定位，input块为相对定位,其中的超链接的div设置为以父元素的绝对定位*/
+.search_warp {
+  float: left;
+  position: relative;
+  margin-left: 25px;
+  width: 20em;
+  height: 72px; }
+  .search_warp .search_input {
+    height: 32px;
+    position: relative;
+    width: auto;
+    top: 27px;
+    border-bottom: 1px solid gainsboro; }
+    .search_warp .search_input input {
+      height: 18px;
+      position: absolute;
+      bottom: 14px;
+      border: none; }
+  .search_warp .search_a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 23px;
+    right: 4rem; }
+    .search_warp .search_a #java {
+      margin-right: -1px; }
+    .search_warp .search_a a {
+      font-size: 12px;
+      color: #4D555D;
+      padding: 3px 8px;
+      background: #f3f5f7;
+      border-radius: 12px;
+      text-decoration: none; }
+  .search_warp .search_up {
+    z-index: 11;
+    position: absolute;
+    right: 2px;
+    bottom: 24px;
+    padding: 0 8px;
+    border-radius: 18px; }
+    .search_warp .search_up .glyphicon-search {
+      font-size: 14.5px;
+      color: #757a7e; }
+
+/*导航栏右侧*/
+.login_area {
+  z-index: 11;
+  position: relative;
+  float: right;
+  font-size: 14px;
+  margin-top: 0.5rem; }
+  .login_area .login_ul .up_in a {
+    margin: 0 1.2rem; }
+    .login_area .login_ul .up_in a:last-child {
+      margin-right: 2.5rem; }
+  .login_area .login_ul .shop_a {
+    margin-top: -8px;
+    width: auto;
+    display: inline-block;
+    border-radius: 18px;
+    color: #787d82;
+    padding: 7px 17px;
+    border: 1px solid #d0d5d8; }
+    .login_area .login_ul .shop_a span:first-child {
+      margin-right: 8px; }
+  .login_area .login_ul li {
+    float: left;
+    margin-right: 0.95rem;
+    margin-left: 0.45rem; }
+
+/*右侧下拉框*/
+.mobile-box {
+  position: relative;
+  margin-top: 3rem;
+  z-index: 900; }
+  .mobile-box .app_load {
+    display: none;
+    position: absolute;
+    right: -22%;
+    top: 100%;
+    background: white;
+    width: 314px;
+    height: 186px;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2); }
+    .mobile-box .app_load h4 {
+      margin: 12px 0;
+      font-size: 14px;
+      color: #1C1F21;
+      text-align: center;
+      line-height: 22px; }
+    .mobile-box .app_load img {
+      width: 108px;
+      height: 108px;
+      margin-left: 20px; }
+    .mobile-box .app_load .r {
+      float: right; }
+      .mobile-box .app_load .r #apple {
+        position: absolute;
+        content: url("./img/苹果.png");
+        right: 127px;
+        top: 55px; }
+      .mobile-box .app_load .r #android {
+        position: absolute;
+        content: url("./img/安卓2.png");
+        right: 125px;
+        top: 100px; }
+      .mobile-box .app_load .r a {
+        display: block;
+        color: #fff;
+        width: 132px;
+        height: 36px;
+        margin-bottom: 8px;
+        line-height: 36px;
+        background: #4D555D;
+        border-radius: 18px;
+        font-size: 12px;
+        margin-right: 27px;
+        text-align: right;
+        padding-right: 14px; }
+      .mobile-box .app_load .r p {
+        font-size: 12px;
+        margin-left: 12px;
+        color: #4D555D; }
+
+/*--------------------购物车下拉框---------------*/
+.shop_nav {
+  display: none;
+  width: 344px;
+  height: 400px;
+  position: absolute;
+  right: 15rem;
+  padding: 0px 16px;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 999;
+  box-shadow: 0 8px 16px 0 rgba(28, 31, 33, 0.2);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; }
+  .shop_nav .main {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #d0d5d8;
+    padding-bottom: 5.5rem;
+    padding-top: 5rem; }
+    .shop_nav .main span i::before {
+      content: url("./img/购物车.png"); }
+    .shop_nav .main h3 {
+      display: block;
+      font-size: 14px;
+      color: #545C63;
+      text-align: center;
+      line-height: 24px; }
+    .shop_nav .main .div_text {
+      position: relative;
+      margin: 0.3rem 0 1.4rem 0;
+      color: #9199A1;
+      font-size: 12px; }
+    .shop_nav .main a {
+      font-size: 12px;
+      line-height: 24px;
+      color: rgba(240, 20, 20, 0.6); }
+      .shop_nav .main a:hover {
+        color: red; }
+  .shop_nav .first {
+    position: relative;
+    padding: 15px 12px;
+    border-bottom: 1px solid #D3D6D9; }
+    .shop_nav .first h5 {
+      font-weight: bold;
+      font-size: 14px;
+      color: #1C1F21; }
+    .shop_nav .first #h_r {
+      position: absolute;
+      bottom: 1.2rem;
+      right: 1rem;
+      font-size: 12px;
+      color: #9199A1; }
+  .shop_nav .footer {
+    position: relative;
+    margin-top: 1.6rem; }
+    .shop_nav .footer .r {
+      position: absolute;
+      color: #93999f;
+      top: 1rem;
+      font-size: 12px; }
+    .shop_nav .footer .l {
+      float: right;
+      color: white;
+      width: 96px;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 8px 16px;
+      background: rgba(240, 20, 20, 0.8);
+      border-radius: 16px; }
+
+.Carousel_map {
+  box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+  padding-top: 28px;
+  padding-bottom: 35px; }
+  .Carousel_map .content_up {
+    font-weight: 400;
+    position: relative;
+    background-color: #93999f;
+    box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+    width: 1152px;
+    height: 444px;
+    margin: auto;
+    border-radius: 8px; }
+    .Carousel_map .content_up .content_left {
+      float: left;
+      width: 216px;
+      height: 444px;
+      padding-top: 12px;
+      background: #2b333b;
+      border-radius: 10px; }
+      .Carousel_map .content_up .content_left a {
+        text-decoration: none;
+        display: block;
+        color: rgba(245, 239, 239, 0.719);
+        padding: 0 20px;
+        height: 60px;
+        transition: all 0.2s;
+        line-height: 3.5; }
+        .Carousel_map .content_up .content_left a i:before {
+          content: url("./img/三角.png");
+          position: absolute;
+          left: 190px; }
+      .Carousel_map .content_up .content_left .group {
+        font-size: 14px; }
+      .Carousel_map .content_up .content_left [data-id=items-1] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-1] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-1] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-1] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-1] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-1] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-1] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-1] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-2] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-2] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-2] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-2] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-2] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-2] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-2] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-2] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-3] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-3] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-3] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-3] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-3] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-3] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-3] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-3] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-4] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-4] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-4] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-4] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-4] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-4] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-4] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-4] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-5] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-5] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-5] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-5] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-5] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-5] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-5] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-5] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-6] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-6] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-6] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-6] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-6] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-6] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-6] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-6] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+      .Carousel_map .content_up .content_left [data-id=items-7] {
+        display: none;
+        z-index: 700;
+        background: #fff;
+        position: absolute;
+        width: 768px;
+        height: 444px;
+        left: 216px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); }
+        .Carousel_map .content_up .content_left [data-id=items-7] .one_up {
+          background-color: #fff;
+          padding: 12px 48px 32px;
+          position: relative; }
+          .Carousel_map .content_up .content_left [data-id=items-7] .one_up .one_line {
+            position: relative;
+            height: 1px;
+            margin: 25px 0 10px 0;
+            background-color: rgba(77, 85, 93, 0.08);
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-7] .one_up .one_line span {
+              display: block;
+              position: absolute;
+              background: #fff;
+              padding-right: 12px;
+              left: 0;
+              top: -12px;
+              color: #F20D0D;
+              font-size: 14px;
+              font-weight: 600; }
+          .Carousel_map .content_up .content_left [data-id=items-7] .one_up .up_text {
+            display: block; }
+            .Carousel_map .content_up .content_left [data-id=items-7] .one_up .up_text a {
+              line-height: 40px;
+              display: block;
+              float: left;
+              font-size: 14px;
+              color: #4D555D;
+              padding: 0;
+              padding-right: 25px; }
+        .Carousel_map .content_up .content_left [data-id=items-7] .one_under {
+          position: absolute;
+          bottom: 0;
+          padding: 36px 0 0 48px;
+          background: #F8FAFC; }
+          .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four {
+            position: relative;
+            float: left;
+            background: #F8FAFC;
+            width: 312px;
+            height: 60px;
+            margin-right: 48px;
+            margin-bottom: 36px; }
+            .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four a {
+              width: 100%;
+              height: 100%; }
+            .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four img {
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 64px;
+              height: 42px;
+              border-radius: 4px; }
+            .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card {
+              margin-left: 56px;
+              white-space: nowrap; }
+              .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card .course_card_name {
+                width: 236px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                color: #07111B; }
+              .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card .course_card_price {
+                float: left;
+                font-weight: bold;
+                font-size: 12px;
+                color: #4D555D;
+                line-height: 1px; }
+              .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card .course_card_dot {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D;
+                width: 15px; }
+              .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card .course_card_info {
+                line-height: 1px;
+                font-size: 12px;
+                float: left;
+                color: #4D555D; }
+              .Carousel_map .content_up .content_left [data-id=items-7] .one_under .one_under_four .course_card i {
+                content: url("./img/用户.png");
+                margin-right: 2px;
+                margin-top: -3px; }
+
+.content_right {
+  position: relative;
+  float: left;
+  width: 936px;
+  z-index: 200; }
+  .content_right .content_right_up {
+    height: 316px;
+    width: auto; }
+    .content_right .content_right_up img {
+      width: 100%;
+      height: 100%; }
+  .content_right .content_right_down {
+    position: relative;
+    padding: 0 18px;
+    text-align: center;
+    width: auto;
+    height: 128px;
+    background: white; }
+    .content_right .content_right_down #path_banner {
+      content: " ";
+      background: url(./img/background.png) no-repeat;
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .content_right .content_right_down .content_r_a {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      float: left;
+      width: 20%;
+      height: 128px;
+      margin-top: 0;
+      transition: all 0.3s; }
+      .content_right .content_right_down .content_r_a i {
+        display: inline-block;
+        background: url("./img/six.png") no-repeat;
+        width: 36px;
+        height: 36px;
+        background-size: 100%;
+        margin-top: 22px; }
+      .content_right .content_right_down .content_r_a .p_bold {
+        font-size: 14px;
+        color: #07111B;
+        letter-spacing: 1px;
+        margin-top: 4px; }
+      .content_right .content_right_down .content_r_a .p_under {
+        font-size: 12px;
+        color: #93999F;
+        line-height: 16px;
+        margin-top: 2px;
+        font-weight: 400; }
+      .content_right .content_right_down .content_r_a .i_web {
+        background-position: center 0; }
+      .content_right .content_right_down .content_r_a .i_java {
+        background-position: center -36px; }
+      .content_right .content_right_down .content_r_a .i_python {
+        background-position: center -72px; }
+      .content_right .content_right_down .content_r_a .i_android {
+        background-position: center -108px; }
+      .content_right .content_right_down .content_r_a .i_fullstack {
+        background-position: center bottom; }
+
+.combat {
+  z-index: 999;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  position: relative;
+  box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+  background: #fff; }
+  .combat .content {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    padding: 0px 0 48px 0;
+    margin-right: auto;
+    margin-left: auto; }
+    .combat .content .types_title {
+      text-align: center;
+      line-height: 36px;
+      color: #93999F;
+      margin-top: 1px;
+      margin-bottom: 5px;
+      letter-spacing: -1.5px; }
+      .combat .content .types_title .span_l {
+        margin-right: 26px;
+        background-position: center 0; }
+      .combat .content .types_title .span_r {
+        background-position: center -36px;
+        margin-left: 24px; }
+      .combat .content .types_title em {
+        margin: 0px  3px 0px 0px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        color: #4D555D; }
+    .combat .content .content_under {
+      display: block; }
+      .combat .content .content_under .under_a {
+        display: block;
+        transform: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        width: 216px;
+        float: left;
+        height: 256px;
+        margin-top: 10px;
+        margin-right: 2px;
+        margin-left: 16px; }
+        .combat .content .content_under .under_a img {
+          width: 99%;
+          height: 120px;
+          border-radius: 8px; }
+        .combat .content .content_under .under_a .p_bold {
+          white-space: pre-wrap;
+          height: 45px;
+          width: 200px;
+          color: #1c1f21;
+          font-size: 16px;
+          font-weight: bold;
+          margin: 8px 8px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          transition: all 0.3s; }
+        .combat .content .content_under .under_a .content_md {
+          position: relative;
+          margin-top: -4px;
+          text-align: center; }
+          .combat .content .content_under .under_a .content_md div {
+            float: left;
+            margin: 2px 5px 1px 7px;
+            font-size: 12px;
+            color: #93999F; }
+          .combat .content .content_under .under_a .content_md .set_sns i {
+            content: url(./img/用户.png); }
+          .combat .content .content_under .under_a .content_md .star {
+            margin-left: 12px; }
+            .combat .content .content_under .under_a .content_md .star i {
+              content: url("./img/评价星星.png"); }
+        .combat .content .content_under .under_a .content_last .course_card_price {
+          float: left;
+          font-weight: bold;
+          font-size: 12px;
+          color: #4D555D;
+          line-height: 1px;
+          margin-left: 6px;
+          margin-top: 12px; }
+          .combat .content .content_under .under_a .content_last .course_card_price_no {
+            float: left;
+            font-weight: bold;
+            font-size: 12px;
+            color: #4D555D;
+            line-height: 1px;
+            margin-left: 6px;
+            margin-top: 12px;
+            text-decoration: line-through; }
+        .combat .content .content_under .under_a .content_last .limited_time_offer {
+          text-align: center;
+          font-size: 13px;
+          color: white;
+          width: 62px;
+          float: left;
+          margin-left: 5px;
+          margin-top: 3px;
+          background: rgba(242, 13, 13, 0.6);
+          padding: 0 4px;
+          border-radius: 3px;
+          font-weight: 600;
+          display: inline-block; }
+        .combat .content .content_under .under_a .course_label {
+          height: 26px;
+          position: absolute;
+          top: 85px;
+          left: 10px; }
+          .combat .content .content_under .under_a .course_label label {
+            font-size: 12px;
+            padding: 4px 8px;
+            color: #FFFFFF;
+            background: rgba(28, 31, 33, 0.6);
+            font-weight: 200;
+            border-radius: 4px; }
+
+.course {
+  z-index: 998;
+  background-color: #f8fafc; }
+  .course .span_l_2 {
+    margin-right: 24px;
+    background-position: center  -72px; }
+  .course .span_r_2 {
+    margin-left: 24px;
+    background-position: center -108px; }
+
+.Beginner {
+  z-index: 997; }
+  .Beginner .span_l_3 {
+    margin-right: 24px;
+    background-position: center -144px; }
+  .Beginner .span_r_3 {
+    margin-left: 24px;
+    background-position: center -180px; }
+  .Beginner .adsense_box {
+    display: block;
+    padding-top: 25px;
+    height: 160px; }
+    .Beginner .adsense_box .adsense_box_l, .Beginner .adsense_box .adsense_box_r {
+      float: left;
+      width: 567px;
+      height: 108px; }
+    .Beginner .adsense_box .adsense_box_l {
+      display: block;
+      background: url("./img/long_1.png");
+      background-size: 100%;
+      border-radius: 8px;
+      margin-right: 15px;
+      margin-left: 15px; }
+    .Beginner .adsense_box .adsense_box_r {
+      display: block;
+      background: url("./img/long_2.jpg");
+      border-radius: 7px; }
+    .Beginner .adsense_box a {
+      display: block;
+      width: 567px;
+      height: 108px;
+      background: rgba(7, 17, 27, 0.4);
+      padding: 30px 0;
+      border-radius: 8px; }
+      .Beginner .adsense_box a .long_bold {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 2px; }
+      .Beginner .adsense_box a .long_sm {
+        font-size: 12px;
+        color: #FFFFFF;
+        margin-top: 4px; }
+    .Beginner .adsense_box p {
+      text-align: center; }
+
+.Skill_improvement {
+  z-index: 996;
+  background-color: #f8fafc; }
+  .Skill_improvement .span_l_4 {
+    margin-right: 24px;
+    background-position: center -216px; }
+  .Skill_improvement .span_r_4 {
+    margin-left: 24px;
+    background-position: center -252px; }
+  .Skill_improvement .adsense_box {
+    display: block;
+    padding-top: 25px;
+    height: 160px; }
+    .Skill_improvement .adsense_box .adsense_box_l, .Skill_improvement .adsense_box .adsense_box_r {
+      float: left;
+      width: 567px;
+      height: 108px; }
+    .Skill_improvement .adsense_box .adsense_box_l {
+      display: block;
+      background: url("./img/vue.jpg");
+      background-size: 100%;
+      border-radius: 8px;
+      margin-right: 15px;
+      margin-left: 15px; }
+    .Skill_improvement .adsense_box .adsense_box_r {
+      display: block;
+      background: url("./img/pythoe.jpg");
+      border-radius: 7px; }
+    .Skill_improvement .adsense_box a {
+      display: block;
+      width: 567px;
+      height: 108px;
+      background: rgba(7, 17, 27, 0.4);
+      padding: 30px 0;
+      border-radius: 8px; }
+      .Skill_improvement .adsense_box a .long_bold {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 2px; }
+      .Skill_improvement .adsense_box a .long_sm {
+        font-size: 12px;
+        color: #FFFFFF;
+        margin-top: 4px; }
+    .Skill_improvement .adsense_box p {
+      text-align: center; }
+
+.advanced_technology {
+  z-index: 995; }
+  .advanced_technology .span_r, .advanced_technology .span_l {
+    background: url("./img/long.png") no-repeat;
+    background-size: 100%;
+    width: 56px;
+    height: 36px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: bottom; }
+  .advanced_technology .span_r {
+    margin-left: 24px;
+    background-position: center -324px; }
+  .advanced_technology .span_l {
+    margin-right: 24px;
+    background-position: center -288px; }
+  .advanced_technology .adsense_box {
+    display: block;
+    padding-top: 25px;
+    height: 160px; }
+    .advanced_technology .adsense_box .adsense_box_l, .advanced_technology .adsense_box .adsense_box_r {
+      float: left;
+      width: 567px;
+      height: 108px; }
+    .advanced_technology .adsense_box .adsense_box_l {
+      display: block;
+      background: url("./img/ql_long.jpg");
+      background-size: 100%;
+      border-radius: 8px;
+      margin-right: 15px;
+      margin-left: 15px; }
+    .advanced_technology .adsense_box .adsense_box_r {
+      display: block;
+      background: url("./img/qr_long.jpg");
+      border-radius: 7px; }
+    .advanced_technology .adsense_box a {
+      display: block;
+      width: 567px;
+      height: 108px;
+      background: rgba(7, 17, 27, 0.4);
+      padding: 30px 0;
+      border-radius: 8px; }
+      .advanced_technology .adsense_box a .long_bold {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 2px; }
+      .advanced_technology .adsense_box a .long_sm {
+        font-size: 12px;
+        color: #FFFFFF;
+        margin-top: 4px; }
+    .advanced_technology .adsense_box p {
+      text-align: center; }
+
+.notes {
+  background: #f8fafc;
+  z-index: 800;
+  overflow: hidden; }
+  .notes .span_r, .notes .span_l {
+    background: url("./img/long.png") no-repeat;
+    background-size: 100%;
+    width: 56px;
+    height: 36px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: bottom; }
+  .notes .span_r {
+    margin-left: 24px;
+    background-position: center -396px; }
+  .notes .span_l {
+    margin-right: 24px;
+    background-position: center -360px; }
+  .notes .content_green {
+    float: left;
+    position: relative;
+    width: 372px;
+    padding: 24px 32px 32px 32px;
+    background: #ffffff;
+    margin-left: 15px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px 0px rgba(7, 17, 27, 0.05);
+    box-sizing: border-box; }
+    .notes .content_green:hover {
+      transition: 0.3s;
+      box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+    .notes .content_green .head {
+      font-size: 12px;
+      color: #FFFFFF;
+      padding: 4px 8px;
+      border-radius: 12px;
+      background: rgba(0, 180, 60, 0.5);
+      width: 70px;
+      margin-bottom: 12px; }
+    .notes .content_green .titles {
+      overflow: hidden;
+      font-size: 16px; }
+      .notes .content_green .titles .title {
+        text-decoration: none;
+        float: left;
+        white-space: pre-wrap;
+        width: 224px;
+        font-size: 16px;
+        color: rgba(0, 180, 60, 0.6);
+        line-height: 24px;
+        transition: all 0.3s; }
+      .notes .content_green .titles img {
+        display: block;
+        float: left;
+        width: 72px;
+        height: 72px;
+        border-radius: 8px;
+        margin-left: 8px; }
+    .notes .content_green .content_text {
+      font-size: 12px;
+      color: #4D555D;
+      padding-top: 16px;
+      line-height: 24px;
+      word-break: break-all; }
+    .notes .content_green .bottom_info {
+      font-size: 12px;
+      height: 16px;
+      margin-top: 16px; }
+      .notes .content_green .bottom_info a {
+        text-decoration: none;
+        color: rgba(0, 180, 60, 0.6);
+        float: right;
+        font-weight: 400;
+        transition: all 0.3s; }
+    .notes .content_green .solid {
+      position: relative;
+      background: #D9DDE1;
+      height: 1px;
+      width: 100%;
+      margin-top: 24px; }
+      .notes .content_green .solid span {
+        width: 60px;
+        height: 16px;
+        font-size: 12px;
+        color: #93999f;
+        position: absolute;
+        top: -9px;
+        background: white; }
+    .notes .content_green .review-topic {
+      overflow: hidden;
+      margin-top: 15px; }
+      .notes .content_green .review-topic .topic_period {
+        margin-top: 15px; }
+        .notes .content_green .review-topic .topic_period a {
+          white-space: pre-wrap;
+          float: left;
+          width: 224px;
+          height: 72px;
+          margin-bottom: 15px;
+          font-size: 14px;
+          transition: all 0.3s;
+          color: #4D555D; }
+        .notes .content_green .review-topic .topic_period img {
+          width: 72px;
+          height: 72px;
+          border-radius: 8px;
+          margin-left: 10px; }
+
+.content_blue {
+  float: left;
+  position: relative;
+  width: 372px;
+  padding: 24px 32px 32px 32px;
+  background: #ffffff;
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(7, 17, 27, 0.05);
+  box-sizing: border-box; }
+  .content_blue:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+  .content_blue .head_word {
+    color: rgba(0, 140, 200, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px; }
+  .content_blue .bottom_info_blue {
+    font-size: 12px;
+    height: 16px;
+    margin-top: 16px; }
+    .content_blue .bottom_info_blue a {
+      color: rgba(0, 140, 200, 0.6);
+      float: right; }
+  .content_blue .titles {
+    overflow: hidden;
+    font-size: 16px; }
+    .content_blue .titles .title {
+      text-decoration: none;
+      float: left;
+      white-space: pre-wrap;
+      width: 224px;
+      font-size: 16px;
+      color: #07111B;
+      line-height: 24px;
+      transition: all 0.3s; }
+    .content_blue .titles img {
+      display: block;
+      float: left;
+      width: 72px;
+      height: 48px;
+      border-radius: 8px;
+      margin-left: 8px; }
+  .content_blue .content_text {
+    font-size: 12px;
+    color: #4D555D;
+    padding-top: 16px;
+    line-height: 24px;
+    word-break: break-all; }
+  .content_blue .look {
+    font-size: 12px;
+    color: #93999F;
+    position: absolute;
+    bottom: 33px; }
+    .content_blue .look span {
+      margin-right: 22px; }
+
+.content_monkey {
+  float: left;
+  position: relative;
+  width: 372px;
+  padding: 24px 32px 32px 32px;
+  background: #ffffff;
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(7, 17, 27, 0.05);
+  box-sizing: border-box; }
+  .content_monkey:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+  .content_monkey .head_word {
+    color: rgba(0, 180, 60, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px; }
+  .content_monkey .titles {
+    overflow: hidden;
+    font-size: 16px; }
+    .content_monkey .titles .title {
+      text-decoration: none;
+      float: left;
+      white-space: pre-wrap;
+      width: 100%;
+      font-size: 14px;
+      color: #07111B;
+      line-height: 24px;
+      transition: all 0.3s; }
+  .content_monkey .content_text {
+    font-size: 12px;
+    color: #4D555D;
+    padding-top: 16px;
+    line-height: 24px;
+    word-break: break-all; }
+    .content_monkey .content_text .bld {
+      font-size: 12px;
+      color: #07111B;
+      line-height: 24px; }
+  .content_monkey a {
+    font-size: 12px;
+    color: rgba(0, 180, 60, 0.6);
+    float: right;
+    font-weight: 400;
+    margin-top: 10px; }
+
+.teacher {
+  background: url("./img/background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 408px; }
+  .teacher .span_r, .teacher .span_l {
+    background: url("./img/long.png") no-repeat;
+    background-size: 100%;
+    width: 56px;
+    height: 36px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: bottom; }
+  .teacher .span_r {
+    margin-left: 24px;
+    background-position: center -468px; }
+  .teacher .span_l {
+    margin-right: 24px;
+    background-position: center -432px; }
+  .teacher a[data-id="l"] {
+    position: absolute;
+    font-size: 30px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f9fbfc42;
+    border: 0px solid #f9fbfc3f;
+    left: 360px;
+    top: 200px; }
+    .teacher a[data-id="l"]:hover {
+      background: #ffffff; }
+    .teacher a[data-id="l"] img {
+      margin-left: 7px; }
+  .teacher a[data-id="r"] {
+    z-index: 9999;
+    position: absolute;
+    font-size: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f9fbfc42;
+    border: 0px solid #f9fbfc3f;
+    left: 1480px;
+    top: 200px; }
+    .teacher a[data-id="r"]:hover {
+      background: #ffffff; }
+    .teacher a[data-id="r"] img {
+      margin-left: 8px;
+      margin-top: -1px; }
+
+.celebrity .span_r, .celebrity .span_l {
+  background: url("./img/long.png") no-repeat;
+  background-size: 100%;
+  width: 56px;
+  height: 36px;
+  display: inline-block;
+  background-size: 100%;
+  vertical-align: bottom; }
+.celebrity .span_r {
+  margin-left: 24px;
+  background-position: center -540px; }
+.celebrity .span_l {
+  margin-right: 24px;
+  background-position: center -504px; }
+.celebrity .four_tag {
+  position: relative;
+  padding: 36px 40px; }
+  .celebrity .four_tag .four_card {
+    width: 136px;
+    height: 98px;
+    float: left;
+    text-align: center;
+    margin-left: 279px;
+    margin-right: -279px; }
+    .celebrity .four_tag .four_card .bk, .celebrity .four_tag .four_card .bk0, .celebrity .four_tag .four_card .bk1, .celebrity .four_tag .four_card .bk2, .celebrity .four_tag .four_card .bk3 {
+      position: absolute;
+      background: url("./img/champion.png");
+      width: 26px;
+      height: 18px;
+      background-size: 100%;
+      top: 20px; }
+    .celebrity .four_tag .four_card .bk0 {
+      background-position: center 0;
+      left: 375px; }
+    .celebrity .four_tag .four_card .bk1 {
+      background-position: center -18px;
+      left: 509px; }
+    .celebrity .four_tag .four_card .bk2 {
+      left: 645px;
+      background-position: center -36px; }
+    .celebrity .four_tag .four_card .bk3 {
+      background-position: center -54px;
+      left: 782px; }
+    .celebrity .four_tag .four_card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+    .celebrity .four_tag .four_card .big {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #07111B;
+      line-height: 16px; }
+    .celebrity .four_tag .four_card .small {
+      font-size: 12px;
+      color: #93999F; }
+.celebrity .some_card {
+  position: relative;
+  margin-top: 70px;
+  width: 888;
+  padding: 20px 115px;
+  z-index: 900; }
+  .celebrity .some_card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 33px;
+    margin-top: 22px;
+    margin-bottom: 6px;
+    margin-right: -1px;
+    border: 2px solid white;
+    z-index: 900; }
+  .celebrity .some_card .message, .celebrity .some_card .message_blue, .celebrity .some_card .message_purple, .celebrity .some_card .message_green {
+    width: 202px;
+    height: 90px;
+    padding: 13px 24px 0;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.4s;
+    display: none; }
+  .celebrity .some_card .message_purple {
+    background: #653ddd;
+    left: 70px;
+    top: -61px;
+    z-index: 300;
+    border-radius: 8px; }
+    .celebrity .some_card .message_purple span {
+      position: absolute;
+      color: #653ddd;
+      font-size: 40px;
+      margin-top: -17px;
+      right: 70px;
+      border-radius: 8px; }
+    .celebrity .some_card .message_purple .first {
+      font-size: 12px; }
+    .celebrity .some_card .message_purple .second {
+      font-size: 14px; }
+    .celebrity .some_card .message_purple .last {
+      font-size: 12px;
+      margin-top: 6px; }
+  .celebrity .some_card .message_green {
+    background: #00b46d;
+    left: 70px;
+    top: -61px;
+    z-index: 300;
+    border-radius: 8px; }
+    .celebrity .some_card .message_green span {
+      position: absolute;
+      color: #00b46d;
+      font-size: 40px;
+      margin-top: -17px;
+      right: 70px;
+      border-radius: 8px; }
+    .celebrity .some_card .message_green .first {
+      font-size: 12px; }
+    .celebrity .some_card .message_green .second {
+      font-size: 14px; }
+    .celebrity .some_card .message_green .last {
+      font-size: 12px;
+      margin-top: 6px; }
+  .celebrity .some_card .message_blue {
+    background: #008cc8;
+    left: 70px;
+    top: -61px;
+    z-index: 300;
+    border-radius: 8px; }
+    .celebrity .some_card .message_blue span {
+      position: absolute;
+      color: #008cc8;
+      font-size: 40px;
+      margin-top: -17px;
+      right: 70px;
+      border-radius: 8px; }
+    .celebrity .some_card .message_blue .first {
+      font-size: 12px; }
+    .celebrity .some_card .message_blue .second {
+      font-size: 14px; }
+    .celebrity .some_card .message_blue .last {
+      font-size: 12px;
+      margin-top: 6px; }
+
+.mains {
+  position: relative;
+  width: 1152px;
+  margin: -250px auto; }
+  .mains .two_block {
+    position: absolute;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 10px; }
+    .mains .two_block .five_card {
+      float: left;
+      z-index: 99;
+      margin-right: 20px;
+      position: relative;
+      width: 216px;
+      height: 248px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      padding: 0 30px;
+      text-decoration: none;
+      font-size: 12px;
+      color: #787d82; }
+      .mains .two_block .five_card:hover {
+        transition: all .3s;
+        background: #fff; }
+        .mains .two_block .five_card:hover img {
+          width: 48px;
+          height: 48px;
+          transition: all .3s; }
+        .mains .two_block .five_card:hover .bold {
+          display: none; }
+        .mains .two_block .five_card:hover .up {
+          display: none; }
+        .mains .two_block .five_card:hover .over {
+          top: 50px;
+          height: 172px;
+          transition: all .3s; }
+      .mains .two_block .five_card img {
+        border-radius: 50%;
+        margin-top: -20px;
+        width: 96px;
+        height: 96px; }
+      .mains .two_block .five_card .bold {
+        margin-top: 8px;
+        font-size: 16px;
+        color: #07111B;
+        font-weight: 700; }
+      .mains .two_block .five_card .up {
+        margin-top: 4px;
+        color: #4D555D; }
+      .mains .two_block .five_card .over {
+        width: 151px;
+        height: 72px;
+        display: block;
+        position: absolute;
+        top: 150px;
+        overflow: hidden;
+        word-break: break-all;
+        line-clamp: 3;
+        line-height: 24px;
+        color: #4D555D; }
+
+.hid {
+  top: 0;
+  position: absolute;
+  width: 1152px;
+  height: 500px;
+  overflow: hidden; }
+
+[data-id="1"] {
+  top: 30px;
+  left: 0px;
+  transition: all 1s; }
+
+[data-id="2"] {
+  top: 30px;
+  left: 1142px;
+  transition: all 1s; }
+
+#footer {
+  width: 100%;
+  background: #f8fafc;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 300px; }
+  #footer .footer_l {
+    width: 750px;
+    height: 50px;
+    margin-right: 480px; }
+    #footer .footer_l a {
+      font-size: 14px;
+      color: #99a1a6;
+      margin-left: 15px;
+      text-decoration: none;
+      margin-bottom: 5px; }
+      #footer .footer_l a:hover {
+        color: #07111B; }
+    #footer .footer_l p {
+      margin-left: 20px;
+      margin-top: 17px;
+      font-size: 12px;
+      color: #93999F; }
+  #footer .footer_r {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    float: right;
+    margin-top: -80px;
+    margin-right: 50px; }
+    #footer .footer_r div {
+      text-align: center;
+      float: right;
+      margin-top: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      display: inline-block;
+      vertical-align: top; }
+      #footer .footer_r div p {
+        font-size: 12px;
+        color: #4D555D;
+        line-height: 25px; }
+    #footer .footer_r .sina a {
+      height: 32px;
+      width: 32px; }
+      #footer .footer_r .sina a .icon {
+        fill: #d0d6d9; }
+      #footer .footer_r .sina a:hover {
+        color: #B7BBBF; }
+        #footer .footer_r .sina a:hover .icon {
+          fill: #B7BBBF; }
+    #footer .footer_r .wechat:hover i {
+      display: block; }
+    #footer .footer_r .wechat i {
+      z-index: 999;
+      position: absolute;
+      display: none;
+      width: 172px;
+      height: 212px;
+      left: -7px;
+      bottom: 73px;
+      background: url("./img/footer2.png") no-repeat 0 0; }
+    #footer .footer_r .wechat a {
+      height: 32px;
+      width: 32px; }
+      #footer .footer_r .wechat a .icon {
+        fill: #d0d6d9; }
+      #footer .footer_r .wechat a:hover .icon {
+        fill: #B7BBBF; }
+
+#Go_to_top {
+  position: fixed;
+  padding: 0 16px;
+  top: 55%;
+  margin-top: -140px;
+  right: 0;
+  z-index: 9999;
+  background: white;
+  box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1); }
+  #Go_to_top a {
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid #edf1f2;
+    padding-bottom: 10px;
+    display: block;
+    margin-top: 20px;
+    padding: 0px 3px;
+    padding-bottom: 10px; }
+    #Go_to_top a .icon {
+      display: block;
+      fill: #D9DDE1;
+      width: 26px;
+      height: 28px; }
+    #Go_to_top a:hover .icon {
+      display: none; }
+    #Go_to_top a:hover p {
+      display: block; }
+    #Go_to_top a:hover .wx {
+      display: block;
+      transition: scale(1);
+      opacity: 1; }
+    #Go_to_top a p {
+      display: none;
+      width: 26px;
+      color: #07111b;
+      font-size: 12px;
+      line-height: 14px; }
+
+.wx {
+  display: none;
+  position: absolute;
+  width: 172px;
+  height: 212px;
+  bottom: -4px;
+  right: 56px;
+  opacity: 0;
+  background: url("./img/right.png") no-repeat;
+  z-index: 9999999;
+  transition: opacity 0.25s, transform .3s; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover; }
+
+.swiper-button-white {
+  background-size: 27px 18px;
+  border-radius: 4px; }
+  .swiper-button-white:hover {
+    background-color: rgba(7, 17, 27, 0.6);
+    color: white !important; }
+
+.swiper-container {
+  background: rgba(7, 17, 27, 0.6); }
+
+.swiper-pagination-bullet {
+  opacity: 0.7; }
+
+.opa {
+  z-index: 0;
+  width: 100%;
+  height: 120px;
+  top: 190px;
+  position: absolute;
+  max-width: 1600px;
+  left: 5%;
+  filter: blur(95px);
+  opacity: 0.5; }
+
+@media screen and (max-width: 1558px) {
+  .opa {
+    left: 10px;
+    width: 95%; } }
+
+/*# sourceMappingURL=index.css.map */

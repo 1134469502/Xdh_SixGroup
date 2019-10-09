@@ -1,0 +1,207 @@
+*{
+    font-family:Comic Sans MS;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-indent: 1em;
+    text-decoration: none;
+}
+
+#zen-intro h1{
+    position: absolute;
+    color: #fff;
+font-weight: 900;
+font-size: 8em;
+left:40px ;
+text-shadow: 15px  15px 15px #ee4545;
+}
+
+.explanation{
+    position: absolute;
+    width: 1600px;
+    height: 2500px;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    background-color: rgb(224, 255, 255,0.7);
+}
+.explanation h3{
+    margin-right: 350px;
+    font-size: 35px;
+    color: rgb(100, 105, 68);
+}
+.explanation p{
+    text-indent: 2em;
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 300px;
+    margin-left: 30px;
+    margin-right: 130px;
+    color: rgb(100, 105, 68);
+}
+.page-wrapper{
+    width: 1840px;
+    height: 2800px;
+    background-color: rgb(192, 240, 224);
+    text-align: center;
+}
+.participation{
+    position: absolute;
+    width: 550px;
+    height: 750px;
+    background-color:rgba(246,247,146,0.9);
+    right: 0px;
+    top: 55.5%;
+    box-shadow: -2px -2px 10px gray;
+}
+.participation h3{
+    font-size: 30px;
+}
+.participation a{
+    color: black;
+}
+.participation p{
+    font-weight: 550;
+    margin-left: 5px;
+    padding: 0  25px;
+    text-align: left;
+    line-height: 30px;
+}
+.benefits{
+position: absolute;
+width: 900px;
+height: 250px;
+background-color: rgba(255,255,255,0.9);
+top: 88%;
+left: 0px;
+box-shadow: 10px 10px 5px 5px #888888;
+border-top: #ee4545 solid 2px;
+}
+.benefits h3{
+    font-size: 33px;
+}
+.benefits p{
+    font-size: 23px;
+    line-height: 30px;
+    padding-left: 40px;
+    text-align: left;
+}
+.requirements{
+    position: absolute;
+    width: 1200px;
+    height: 550px;
+    top: 1650px;
+    right: 172px;
+    background-color: rgba(255,255,255,0.9)
+}
+.requirements h3{
+    font-size: 30px;
+    text-align: left;
+    text-indent: 2em;
+}
+.requirements p{
+    color: rgb(0, 0, 0);
+    padding: 0 5px;
+    text-indent: 2em;
+    text-align: left;
+    font-size: 22.5px;
+    line-height: 26px;
+}
+.requirements a{
+    color: rgb(175, 135, 177);
+    padding: 0 5px;
+    text-indent: 2em;
+    text-align: left;
+    font-size: 22.5px;
+    line-height: 26px;
+}
+.design-selection{
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    background: rgba(234,46,73,0.9);
+    color: #fff;
+    right:172px;
+    top: 1300px;
+}
+.design-selection h3{
+    font-size: 33px;
+}
+.design-selection ul{
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 800;
+}
+.design-selection ul{
+    list-style: none;
+}
+.design-selection a{
+    color:#fff;
+}
+.zen-resources ul {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    background-color: rgba(255,255,240,0.9);
+    top:1950px;
+    list-style:none;
+    left: 80px;
+    box-shadow: -15px -15px 10px rgba(164, 214, 197, 0.644);
+}
+
+.zen-resources a{
+    line-height: 40px;
+    margin-right: 35px;
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(141, 97, 199);
+}
+.preamble{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 1150px;
+    left: 230px;
+}
+.preamble h3{
+    margin-right:26px;
+    font-size: 33px;
+    font-weight: 900;
+}
+.preamble p{
+    line-height: 26px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 23px;
+}
+footer{
+    position: absolute;
+    width:650px;
+    height: 50px;
+    top: 2250px;
+    left: 400px;
+    background-color: rgba(246,247,146,0.9);
+}
+footer a{
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    padding: 1em 5%;
+    width: 50%;
+}
+.design-archives{
+    display: none;
+}
+.resources{
+    display: none;
+}
+.summary p{
+    display: none;
+}
+.intro h2{
+    display: none;
+}
+
